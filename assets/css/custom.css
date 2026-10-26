@@ -1,0 +1,329 @@
+
+/* ==================================
+   TECHNICAL WRITING PORTFOLIO
+   Warm Neutral + Muted Purple Theme
+   ================================== */
+
+:root {
+  --page-bg: #F7F6F4;
+  --surface: #FFFFFF;
+  --text: #37343B;
+  --text-muted: #625E66;
+  --purple: #8B78B5;
+  --purple-hover: #6D588F;
+  --pale-lilac: #EAE4F2;
+  --border: #E5E1E7;
+}
+
+/* Main page */
+html,
+body {
+  background-color: var(--page-bg);
+  color: var(--text);
+}
+
+/* Main content area */
+#main {
+  background-color: var(--page-bg);
+}
+
+/* Section backgrounds */
+#main > section {
+  background-color: var(--page-bg);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+}
+
+/* Paragraphs and general text */
+body,
+input,
+select,
+textarea {
+  color: var(--text-muted);
+}
+
+/* Links */
+a {
+  color: var(--purple);
+}
+
+a:hover {
+  color: var(--purple-hover);
+}
+
+/* Sidebar */
+#header {
+  background-color: #F1EFF3;
+  color: var(--text-muted);
+}
+
+/* Sidebar title */
+#header h1 {
+  color: var(--text);
+}
+
+/* Sidebar navigation */
+#header a {
+  color: var(--text-muted);
+}
+
+#header a:hover,
+#header a.active {
+  color: var(--purple);
+}
+
+/* Buttons */
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background-color: var(--purple);
+  color: #FFFFFF !important;
+  border-color: var(--purple);
+}
+
+/* Button hover */
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover {
+  background-color: var(--purple-hover);
+  border-color: var(--purple-hover);
+}
+
+/* Dividers and borders */
+#main > section {
+  border-top-color: var(--border);
+}
+
+hr,
+table,
+table td,
+table th {
+  border-color: var(--border);
+}
+
+/* Icons */
+.icon {
+  color: var(--purple);
+}
+
+/* Form fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  background-color: #FFFFFF;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+/* Text selection */
+::selection {
+  background-color: var(--pale-lilac);
+  color: var(--text);
+}
+
+/* ===== FONT COLORS: NEUTRAL + PURPLE ===== */
+
+/* Main page text */
+body,
+input,
+select,
+textarea {
+  color: #625E66;
+}
+
+/* All headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #37343B;
+}
+
+/* Main title: replace mint green */
+#main h1 {
+  color: #37343B;
+}
+
+/* Main subtitle */
+#main h2 {
+  color: #625E66;
+}
+
+/* Paragraphs */
+#main p {
+  color: #625E66;
+}
+
+/* Links */
+a {
+  color: #7863A2;
+}
+
+a:hover {
+  color: #594477;
+}
+
+/* Sidebar background */
+#header {
+  background-color: #F1EFF3;
+}
+
+/* Sidebar name */
+#header h1,
+#header h1 a {
+  color: #37343B !important;
+}
+
+/* Sidebar description */
+#header p {
+  color: #625E66 !important;
+}
+
+/* Sidebar navigation */
+#header nav a {
+  color: #625E66 !important;
+}
+
+/* Sidebar navigation hover and active states */
+#header nav a:hover,
+#header nav a.active {
+  color: #6D588F !important;
+}
+
+/* Sidebar social icons */
+#header ul.icons a {
+  color: #8B78B5 !important;
+}
+
+/* Buttons */
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #8B78B5;
+  color: #FFFFFF !important;
+  border-color: #8B78B5;
+}
+
+/* Buttons on hover */
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #6D588F;
+  border-color: #6D588F;
+}
+
+/* Borders and dividers */
+hr,
+#main > section {
+  border-color: #E5E1E7;
+}
+
+/* Text selection */
+::selection {
+  background-color: #EAE4F2;
+  color: #37343B;
+}
+
+/* ===== REPLACE ORIGINAL GREEN ACCENTS ===== */
+
+/* Accent lines and decorative borders */
+#header nav a,
+#header nav ul li {
+  border-color: #E5E1E7;
+}
+
+#header nav a:hover,
+#header nav a.active {
+  border-color: #8B78B5;
+}
+
+/* Icons */
+.icon,
+#header .icon {
+  color: #8B78B5;
+}
+
+/* Main content accent links */
+#main a {
+  color: #7863A2;
+}
+
+#main a:hover {
+  color: #594477;
+}
+
+/* Sidebar menu link colors */
+
+/* Default menu links */
+#header nav a {
+  color: #625E66 !important;
+  border-bottom-color: #E5E1E7;
+}
+
+/* Hover: muted lavender */
+#header nav a:hover {
+  color: #8B78B5 !important;
+}
+
+/* Clicked/current menu item: deep purple */
+#header nav a.active {
+  color: #6D588F !important;
+  border-bottom-color: #6D588F;
+}
+
+/* Keyboard focus */
+#header nav a:focus-visible {
+  color: #6D588F !important;
+  outline: 2px solid #8B78B5;
+  outline-offset: 3px;
+}
+
+/* ===== SIDEBAR MENU: REMOVE ALL GREEN ===== */
+
+/* Default color for every menu link */
+#header nav ul li a,
+#header nav ul li a:link,
+#header nav ul li a:visited {
+  color: #625E66 !important;
+  border-bottom-color: #E5E1E7 !important;
+  background-color: transparent !important;
+}
+
+/* Hover color */
+#header nav ul li a:hover {
+  color: #8B78B5 !important;
+  background-color: #EAE4F2 !important;
+}
+
+/* Selected or currently active menu link */
+#header nav ul li a.active,
+#header nav ul li a.active:hover,
+#header nav ul li a:focus,
+#header nav ul li a:focus-visible {
+  color: #6D588F !important;
+  border-bottom-color: #E5E1E7 !important;
+  background-color: #EAE4F2 !important;
+}
+
+/* Remove green from the menu's decorative borders */
+#header nav ul li {
+  border-top-color: #E5E1E7 !important;
+}
+
+/* Remove green from menu icons */
+#header nav ul li a .icon {
+  color: #8B78B5 !important;
+}
